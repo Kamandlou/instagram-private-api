@@ -60,10 +60,10 @@ final class InstagramBuilder
      *
      * @return Instagram
      */
-    public function build(): Instagram
+    public function build($userAgent): Instagram
     {
         $client = new Client($this->deviceBuilder, $this->session, $this->proxyUri);
-
+        $client->userAgent = $userAgent;
         return new Instagram($client);
     }
 }
