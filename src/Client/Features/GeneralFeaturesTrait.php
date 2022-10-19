@@ -32,6 +32,7 @@ trait GeneralFeaturesTrait
             $request = $this->buildRequest('si/fetch_headers/', new HeaderResponse());
 
             $payload = [
+                'User-Agent' => $this->userAgent,
                 'challenge_type' => 'signup',
                 'guid'           => SignatureUtils::uuid(SignatureUtils::TYPE_COMBINED),
             ];

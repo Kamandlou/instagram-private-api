@@ -63,6 +63,8 @@ class Client
     /** @var DeviceInterface */
     protected $device;
 
+    protected string $userAgent;
+
     /**
      * Client constructor.
      *
@@ -219,5 +221,10 @@ class Client
     public function __debugInfo()
     {
         return [];
+    }
+
+    public function withUserAgent(string $userAgent): void
+    {
+        $this->userAgent = $userAgent;
     }
 }
