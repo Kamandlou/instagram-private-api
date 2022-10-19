@@ -8,3 +8,6 @@ TODO.md
 
 .php_cs
 .php_cs.cache
+
+.vscode
+.idea
