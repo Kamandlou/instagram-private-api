@@ -11,7 +11,7 @@ To learn how to use this library, please refer to the source code as well as the
 
 You can install this library by using composer
 ```bash
-composer require nicklasw/instagram-api
+composer require kamandlou/instagram-private-api
 ```
 
 ## Features
